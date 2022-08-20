@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+/* visual --------------*/
+
+.visual{width:100%; margin-top: 50px;}
+.visual img{width:100%;}
+.visual_m{width: 100%;}
+
+
+
+/*------------visual slide---------------- */
+.jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background:  url('../images/visual_slide_img/b05-2.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div {background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+       
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('../img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+        .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
+        .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+
+.jssor_2 .s01 h2{position: absolute; transform: translate(-50%,-50%);  top:10%; left:10%;font: bold 40px "Bebas Neue";}
+
+
+
+
+
+
+/*----------contents-------------*/
+.contents{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+
+
+/*--------cont5--------*/
+.cont5{position: relative; width: 100%; margin: 150px auto 0; overflow: hidden; }
+.cont5 h2 {
+    font: normal 18em "Bebas Neue";
+    text-stroke: 1px #000;
+    -webkit-text-stroke: 1px #000;
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    height: 500px;
+    line-height: 500px;
+    animation: scrolln 30s linear infinite;
+    color: #fff;
+    animation-timing-function: linear;
+}
+
+.cont5 .center a{position: absolute; text-align: center; font: normal 3.2rem "Bebas Neue"; transform: translate(-50%,-50%); top:50%; left:50%; color:rgba(255,255,255,0.7);}
+.cont5 .center a:hover{color:#000; transition:all 1s;}
+.cont5 .center{ position: absolute; top:0; left:0; width: 410px; height: 500px; padding:0 38%;}
+.cont5 .center img{position: relative; width:100%; }
+
+
+
+@keyframes scrolln {
+  0% {
+      text-indent: 0em;}
+
+  100% {
+    text-indent: -20em;}
+}
+
+
+
+
+
+
+/*--------cont6--------*/
+.cont6{width:100%;height:400px; margin-top: 50px;
+	margin-bottom:20px;overflow:hidden; background: rgba(216, 236, 208, 0.5);
+}
+
+.slide{
+	width:95%;height:380px;
+	padding-top:45px;
+	position:relative;
+    margin: 0 auto; 
+}
+.slide ul li img{width:200px;}
+.slide span, .slide span strong{
+	display:block;text-align:center;
+}
+.slide span strong{
+	color:#000;font:normal 14px "Bebas Neue"; letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+.slide span{
+	padding-top:15px;
+    font:normal 11px "Share Tech Mono";
+}
+.slide .prev_btn1{
+	position:absolute;top:120px;left:0px;
+}
+.slide .next_btn1{
+	position:absolute;top:120px;right:0px;
+}
+
+.slide ul li img:hover{filter: brightness(80%); transition:all 0.6s;}
+
+
+
+/*--------cont2--------*/
+.cont2{margin:80px auto 0; width:100%; overflow: hidden;/* background: #000;*/}
+.cont2 h2{text-align: center; font: bold 28px "Gowun Dodum";}
+.main1{text-align: center;}
+.main1 a{color:gray;}
+.main1 a:hover{text-decoration:underline;}
+
+
+.slider { margin: 50px auto 10px!important;  white-space:nowrap;width: 1000px; background: #d2d2d2;}
+#carousel li {margin-right: 5px;}
+#carousel img {display: block; opacity: .5; cursor: pointer;}
+#carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+
+
+/* Layout
+***********************/
+
+#main { margin:0 auto; margin-top: -25px;overflow:auto; z-index: 3000;}
+.main1{width:100%; text-align:center;}
+
+.main1 a{color:gray;font:normal 12px "맑은 고딕";text-decoration: none;}
+.main1 a:hover{color:gray;text-decoration: underline;}
+
+.main1>section{float:left; height: 500px; }
+.main1>section:first-child{position: relative; width: 30%; margin-top: 50px; text-align: center;background: #000; }
+
+.main1>section:first-child .txt{
+position: relative;
+top:15%; left:50%;
+text-align: left;
+padding: 20px;
+line-height: 0.8;
+transform: translate(-50%,-50%);
+color:#fff;
+z-index: 100;
+}
+
+.main1>section:first-child img {width:330px; height: 250px;}
+
+.main1>section:last-child{width: 65%;}
+
+  
+
+
+
+
+/*--------cont7--------*/
+.cont7{position: relative; background:#fff;  margin:150px auto; overflow: hidden; }
+
+.cont7 .product{position: relative; width: 24%; margin:50px auto 0; }
+.cont7 .product img{width: 100%; }
+
+.cont7 .video{ position: relative; width: 1008px; height: 567px; margin: 0 auto; padding: 40px 0; z-index:3; }
+.cont7 .video iframe{width: 100%; }
+
+
+.cont7 .text1 {
+    position: absolute;
+    transform: translate(0%, 0%);
+    left: -37%;
+    top: -30%;
+    z-index: -1;
+    writing-mode: tb-rl;
+    font: normal 205px "Bebas Neue";
+    text-stroke: 2px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.7);
+    letter-spacing: 30px;
+    color: #fff;
+    text-shadow: 15px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.cont7 .text2 {
+    position: absolute;
+    transform: translate(0%, 0%);
+    right: -37%;
+    top:40%;
+    z-index: -1;
+    writing-mode: tb-rl;
+    font: normal 205px "Bebas Neue";
+    text-stroke: 2px #000;
+    -webkit-text-stroke: 2px #000;
+    letter-spacing: 30px;
+    color: #fff;
+    text-shadow: 15px 4px 0px rgba(0, 0, 0, 0.7);
+}
+
+.cont7 .name{position: relative; width: 50%; margin:30px auto; }
+.cont7 .name img{width: 100%; }
+
+.cont7 h2{ font:bold 30px "Gothic A1"; text-align: center; z-index: 10; margin: 0 auto; }
+
+
+/* .cont7_ btn */
+.cont7 .btn {
+  position: relative;
+  width: 17%;
+  height: 60px;
+  text-align: center;
+  font:bold 30px "Gothic A1";
+  margin: 0 auto; 
+  z-index: 1;
+  transition: all 0.7s;    
+}
+
+.cont7 .btn a{width: 100%;z-index: 100; height: 60px; line-height: 60px;   display: block; box-sizing: border-box; border-bottom:3px solid #000; transition: all 0.7s;}
+
+
+.cont7 .btn:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: /*rgba(0,0,0,0.9);*/linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8));
+  transition: all 0.5s ease;
+}
+.cont7 .btn a:hover {
+  color: #fff;
+}
+.cont7 .btn:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+
+
+
+
+
+/*--------cont10--------*/
+.cont10{width: 100%;position: relative; height: 500px; margin:150px auto 0; overflow: hidden; } /*높이가 낮으면 움직이지도 않네*/
+.cont10 .cont10_in{position: relative; width: 100%; margin: 0 auto; height: 1000px; background: url(../images/c6.png) no-repeat center top fixed; background-size: cover; }
+
+.moving {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: url(../images/moving.png) 1500px center / 1750px repeat-x;
+    animation: movebg 40s linear infinite;
+}
+
+@keyframes movebg{
+        0%{background-position: 0 center;}
+        100%{background-position: -3000px center;}/*속도*/
+    }    
+
+
+
+
+
+
+/*--------cont18--------*/
+.cont18{width: 100%;position: relative; margin:150px auto 0; overflow: hidden; }
+
+.cont18>div{float: left; width: 49%; position: relative;}
+.cont18>div:first-child{margin-right: 2%;}
+.cont18>div:first-child img{width: 100%;}
+
+
+.cont18>div:first-child .cap{position: absolute; width: 100%;  height: 100%; box-sizing: border-box;  background: rgba(216, 236, 208, 0.5); z-index:10; top:0; left:0; opacity: 0;}
+.cont18>div:first-child .txt1{position: absolute; font:normal 22px "Bebas Neue"; text-align: center; transform:translate(-50%,-50%); top:50%; left:50%; opacity: 0; color:#fff; z-index: 20;}
+.cont18>div:first-child .txt2{position:absolute; transform:translate(0%,0%); left:45%; font:normal 18px "Bebas Neue"; text-align: center; z-index: 20;}
+.cont18>div:first-child:hover .cap{opacity: 0.9; transition: all 0.7s;}
+
+
+.cont18>div:last-child ul{}
+.cont18>div:last-child li{position: relative; float: left; width:48%; margin-right: 4%; margin-bottom: 4%;}
+.cont18>div:last-child li .cap{position: absolute; width: 100%;  height: 100%;box-sizing: border-box;  background: rgba(216, 236, 208, 0.5); z-index:10; top:0; left:0; opacity: 0;}
+.cont18>div:last-child li:nth-child(2n){margin-right:0;}
+.cont18>div:last-child li img{width: 100%;}
+
+.cont18>div:last-child li .txt1{position: absolute; font:normal 20px "Bebas Neue"; text-align: center; transform:translate(-50%,-50%); top:50%; left:50%; opacity: 0; color:#fff;z-index:20; }
+.cont18>div:last-child li .txt2{position: absolute; font:normal 18px "Bebas Neue";  transform:translate(0%,0%); left:40%;  z-index: 20;}
+.cont18>div:last-child li:nth-child(2) .txt2, .cont18>div:last-child li:nth-child(3) .txt2{position: absolute; font:normal 18px "Bebas Neue";  transform:translate(0%,0%); left:35%;  z-index: 20;}
+.cont18>div:last-child li:hover .cap{opacity: 0.9; transition: all 0.7s;}
+
+.cont18>div:first-child .txt1_p{position: absolute; font:normal 20px "Bebas Neue"; text-align: center; letter-spacing: 3px; transform:translate(-50%,-50%); top:50%; left:50%; opacity: 0; color:#fff; z-index:20; }
+.cont18>div:last-child li .txt1_p{position: absolute; font:normal 20px "Bebas Neue"; text-align: center; letter-spacing: 3px; transform:translate(-50%,-50%); top:50%; left:50%; opacity: 0; color:#fff; z-index:20; }
+
+
+/*--------cont18_m--------*/
+.cont18_m{width: 100%;position: relative; margin:150px auto 0; overflow-x: scroll; overflow-y:hidden; white-space: nowrap; background:#fbfbfb;}
+.cont18_m ul{width: 150%; margin:15px 0; background:#d8ecd0; }
+.cont18_m li{position: relative; float: left; width: 19%; margin-right: 1%; margin-bottom: 20px;}
+.cont18_m li img{width: 100%;}
+.cont18_m li .txt1{position:absolute;height: 20px; transform: translate(0%,0%); font: normal 15px "Bebas Neue"; line-height: 20px; top:100%; left:5%;}
+.cont18_m li .cap{position: absolute; width: 100%; height: 100%; top:0 ; left:0; box-sizing: border-box;  background:rgba(216, 236, 208, 0.5); opacity: 0; z-index: 10; }
+.cont18_m li:hover .cap{ opacity: 1; z-index: 10; }
+
+
+
+
+
+/*--------cont19--------*/
+.cont19 {position:relative; width: 100%; height: 100%; overflow: hidden; margin: 150px auto 0; background:#fbfbfb; }
+.cont19 section{position: relative; float:left; width: 50%; height:100%; overflow: hidden; }
+.cont19 section img{width: 100%;}
+.cont19 section>div{position: relative; width: 100%; height: 50%; }
+.cont19 section>div:first-child{position: relative; width:100%; height:50%; display: block;  background: #fbfbfb; text-align: center; overflow: hidden; }
+.cont19 section>div:first-child a{position: relative; display: block; box-sizing: border-box;  width: 100%; height: 50%; }
+.cont19 section>div ul{}
+.cont19 section>div li{position: relative; width: 50%; float: left;}
+.cont19 section>div li img{ width: 100%;}
+.cont19 section>div:last-child{position: relative; width:100%; height:50%; display: block;  background: #fbfbfb; text-align: center; overflow: hidden; }
+.cont19 section>div:last-child h2{font: normal 35px "Bebas Neue"; margin-top: 18%;}
+.cont19 section>div:last-child h3{font: bold 15px  "Gothic A1";
+margin-top: 3%;  }
+.cont19 section>div:last-child h3 a{width:200px; height: 30px; line-height: 30px; display: inline-block; text-align: center; box-sizing: border-box; border: 1px solid #000;}
+.cont19 section>div:last-child h3 a:hover{background:rgba(0,0,0,0.8); transition: all 0.7s; color:#fff;}
+
+
+
+
+/*--------cont21--------*/
+.cont21 {position:relative; width: 100%; height: 100%; overflow: hidden; margin: 150px auto 0; background:#000; }
+.cont21 section{position: relative; float:left; width: 50%; height:100%; overflow: hidden; }
+.cont21 section img{width: 100%;}
+.cont21 section>div{position: relative; width: 100%; height: 50%; }
+.cont21 section>div:first-child{position: relative; width:100%; height:50%; display: block; text-align: center; overflow: hidden; }
+.cont21 section>div:first-child a{position: relative; display: block; box-sizing: border-box;  width: 100%; height: 50%; }
+.cont21 section>div:last-child{position: relative; width:100%; height:50%; display: block;  background: #000; text-align: center; overflow: hidden; }
+.cont21 section>div:last-child h2{font: normal 35px "Bebas Neue"; margin-top: 18%; color:#fff;}
+.cont21 section>div:last-child h3{font: bold 15px  "Gothic A1";
+margin-top: 3%; color:#fff; }
+.cont21 section>div:last-child h3 a{width:200px; height: 30px; line-height: 30px; display: inline-block; text-align: center; box-sizing: border-box; border: 1px solid #fff; color:#fff;}
+.cont21 section>div:last-child h3 a:hover{background:#fff; transition: all 0.7s; color:#000;}
+
+
+
+/*--------cont22--------*/
+.cont22 {position:relative; width: 100%; height: 100%; overflow: hidden; margin: 150px auto 0;  background:#fbfbfb; }
+.cont22 section{position: relative; float:left; width: 50%; height:100%; overflow: hidden; }
+.cont22 section img{width: 100%;}
+.cont22 section>div{position: relative; width: 100%; height: 50%; }
+.cont22 section>div:first-child{position: relative; width:100%; height:50%; display: block;  background: #fbfbfb; text-align: center; overflow: hidden; }
+.cont22 section>div:first-child a{position: relative; display: block; box-sizing: border-box;  width: 100%; height: 50%; }
+.cont22 section>div ul{}
+.cont22 section>div li{position: relative; width: 50%; float: left;}
+.cont22 section>div li img{ width: 100%;}
+.cont22 section>div:last-child{position: relative; width:100%; height:50%; display: block;  background: #fbfbfb; text-align: center; overflow: hidden; }
+.cont22 section>div:last-child h2{font: normal 35px "Bebas Neue"; margin-top: 18%;}
+.cont22 section>div:last-child h3{font: bold 15px  "Gothic A1";
+margin-top: 3%;  }
+.cont22 section>div:last-child h3 a{width:200px; height: 30px; line-height: 30px; display: inline-block; text-align: center; box-sizing: border-box; border: 1px solid #000;}
+.cont22 section>div:last-child h3 a:hover{background:rgba(0,0,0,0.8); transition: all 0.7s; color:#fff;}
+
+
+
+
+
+/*--------cont20--------*/
+.cont20{width:100%; position: relative; margin:0 auto; overflow: hidden;}
+.cont20 ul{}
+.cont20 li{float:left; position: relative; }
+.cont20 li img{width: 100%;}
+.cont20 li .icon{position:absolute; transform: translate(-50%,-50%); top:50%; left:50%; opacity: 0;}
+.cont20 li .icon img{width:20px; text-align: center;}
+.cont20 li:hover{filter: brightness(90%); transition:all 0.5s;}
+.cont20 li:hover .icon{opacity:0.7;}
